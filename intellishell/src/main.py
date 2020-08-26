@@ -55,13 +55,10 @@ print("""
   | || ' \  _/ -_) | | (_-< ' \/ -_) | |
  |___|_||_\__\___|_|_|_/__/_||_\___|_|_|                                           
 """)
+print(suankizaman.strftime("%a, %b %d, %Y") + ", " + suankizaman.strftime("%H:%M"))
 print(colors.GREEN + 'Welcome to Intellishell, ' + username + "!" + colors.END)
 print(colors.WARNING + "Write 'help' to see commands." + colors.END)
 
-
-print("Current date & time:")
-print (suankizaman.strftime("%Y-%m-%d %H:%M:%S" " || " "%I:%M:%S %p"))
-print (suankizaman.strftime("%a, %b %d, %Y"))
 
 
 
@@ -76,6 +73,7 @@ def main_function():
         elif cmd == "credits":
           print("Intellishell v1.0")
           print("Made by Emir Ensar Rahmanlar (github.com/rahmanlar)")
+          print("                 cezeri.software")
           print("Copyright (c) 2020 Cezeri Software, licensed with MIT.")
         elif cmd == "intellifetch":
           fetch()
