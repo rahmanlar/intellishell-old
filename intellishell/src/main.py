@@ -66,16 +66,9 @@ print (suankizaman.strftime("%a, %b %d, %Y"))
 
 
 #Start
-def cmdline(command):
-    process = Popen(
-        args=command,
-        stdout=PIPE,
-        shell=True
-    )
-    return process.communicate()[0]
 def main_function():
     while True:
-        cmd = input(colors.BLUE + username + colors.END + colors.GREEN  + "@" + colors.BLUE + hostname + colors.END + ": ")
+        cmd = input(colors.BLUE + username + colors.END + colors.GREEN  + "@" + colors.BLUE + hostname + colors.END + colors.WARNING + " > " + colors.END)
         
           
         if cmd == "exit":
