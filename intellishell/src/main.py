@@ -57,6 +57,8 @@ print("""
 """)
 print(suankizaman.strftime("%a, %b %d, %Y") + ", " + suankizaman.strftime("%H:%M"))
 print(colors.GREEN + 'Welcome to Intellishell, ' + username + "!" + colors.END)
+if suankizaman.strftime("%b, %d") == "Jan 01":
+  print("HAPPY NEW YEAR! 🎉")
 print(colors.WARNING + "Write 'help' to see commands." + colors.END)
 
 
