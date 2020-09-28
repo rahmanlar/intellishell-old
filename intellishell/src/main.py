@@ -22,7 +22,6 @@
 import os
 import getpass
 import socket
-import psutil
 import sys
 import sysconfig
 import random
