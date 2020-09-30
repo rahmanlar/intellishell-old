@@ -10,12 +10,14 @@ import subprocess
 import cmd
 import ssl
 import distro
-import cpuid
 import GPUtil
 import csv
 import datetime
 import time
-
+try:
+  import cpuid
+except:
+  print("An exception occurred: cpuid library was not found.")
 class colors:
     HEADER = '\033[95m'
     BLUE = '\033[94m'
