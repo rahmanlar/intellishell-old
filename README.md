@@ -1,4 +1,6 @@
 # intellishell
 Shell. Stupidly simple.
 
-# NOTE: Run with Python 3, and install cpuid library with "pip install cpuid"
+# NOTES: Run with Python 3
+# Install cpuid library with "pip install cpuid"
+# Do not open from IDLE.
