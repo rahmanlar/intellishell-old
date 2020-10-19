@@ -32,6 +32,7 @@ import cmd
 import ssl
 import datetime
 import time
+from pathlib import Path
 from intellifetch import fetch
 from intellifetch import fetch_os
 hostname = socket.gethostname()
@@ -68,7 +69,7 @@ print(colors.WARNING + "Write 'help' to see commands." + colors.END)
 #Start
 def main_function():
     while True:
-        cmd = input(colors.BLUE + username + colors.END + colors.GREEN  + "@" + colors.BLUE + hostname + colors.END + colors.WARNING + " > " + colors.END)
+        cmd = input(colors.BLUE + username + colors.END + colors.GREEN  + "@" + colors.BLUE + hostname + colors.FAIL + " | " + colors.END + os.path.dirname(__file__) + colors.WARNING + " > " + colors.END)
         
           
         if cmd == "exit":
@@ -87,13 +88,14 @@ def main_function():
         elif cmd == "print":
           prinput = input("print ")
           print(prinput)
-        elif cmd == "diskusage":
-          print(psutil.disk_usage('/'))
         elif cmd == "help":
           print(colors.GREEN + "credits " + colors.END + "- See who's making this app.")
           print(colors.GREEN + "intellifetch " + colors.END + "- A simple screenfetch.")
           print(colors.GREEN + "termcmd " + colors.END + "- To type terminal or cmd commands only.")
           print(colors.GREEN + "print " + colors.END + "- A simple print function.")
+        elif cmd == "ls":
+          print(os.listdir())
+
         else:
             terminalcommand = os.system(cmd)
             
