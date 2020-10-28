@@ -1,4 +1,5 @@
 # intellishell
+![intellishell](https://raw.githubusercontent.com/rahmanlar/intellishell/master/IntelliShell.png)
 Shell. Stupidly simple.
 
 # NOTES:
